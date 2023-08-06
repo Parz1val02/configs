@@ -1,1 +1,60 @@
-# GNOME rice and arch configs
+### Arch rice in Gnome<br/>
+- Configure pacman<br/>
+    - sudo vim /etc/pacman.conf<br/>
+    - Add `Color` and `ILoveCandy`<br/>
+- Install bat, exa<br/>
+    - Use alias and source .bashrc<br/>
+- Install oh-my-bash<br/>
+    - `agnoster` theme<br/>
+    - `alias cat="bat"`<br/>
+    - `alias ls="exa"`<br/>
+    - `alias vim="nvim"`<br/>
+    - `export EDITOR="vim"`<br/>
+- Install neovim <br/>
+    - Clone [kickstart.nvim](https://github.com/Parz1val02/kickstart.nvim) into ~/.config/nvim<br/>
+- Install oh-my-tmux<br/>
+- Install alacritty<br/>
+- Install neofetch, cmatrix, cava<br/>
+- Catpuccin modded theme for user theme and legacy applications (configure in tweaks)<br/>
+    - This themes allows to have the transparent topbar <br/>
+    - Copy to ~/.themes <br/>
+- Install a nerd font from aur (ComicShannsMono Nerd Font)<br/>
+- Install icons (papirus)<br/>
+    - `wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh`<br/>
+    - Copy to ~/.icons<br/>
+
+### Gnome extensions<br/>
+- Aylur's Widgets<br/>
+- Blur my Shell<br/>
+- Logo menu<br/>
+- Top bar organizer<br/>
+- User Themes<br/>
+- Vitals<br/>
+- Space bar<br/>
+- App hider<br/>
+- Forge for tiling (not necessary for now)<br/>
+
+### General recommendations<br/>
+- Install yay<br/>
+    - `git clone https://aur.archlinux.org/yay.git`<br/>
+    - `makepkg -si`<br/>
+- Refresh pacman mirrorlist<br/>
+    - `sudo pacman -S reflector`<br/>
+    - `sudo systemctl enable reflector.timer`<br/>
+- Automatic cleaning the package cache<br/>
+    - `sudo pacman -S pacman-contrib`<br/>
+    - `sudo systemctl enable paccache.timer`<br/>
+- Enable NTP (Network time protocol)<br/>
+    - Configure /etc/systemd/timesyncd.conf<br/>
+    - Start and enable systemd-timesyncd<br/>
+- Enable periodic trim for the ssd<br/>
+    - Check TRIM support<br/>
+	- `lsblk --discard`<br/>
+    - Start and enable fstrim.timer<br/>
+- Instal ufw<br/>
+    - Default settings are fine (deny incoming, allow outgoing connections)<br/>
+
+### Todo<br/>
+>I need swap file<br/>
+>I need to start making backups<br/>
+>I need to start making shell scripts<br/>
