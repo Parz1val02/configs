@@ -1,57 +1,60 @@
-### Arch rice in Gnome
-- Configure pacman
-    sudo vim /etc/pacman.conf
-    Add `Color` and `ILoveCandy`
-- Install bat, exa
-    Use alias and source .bashrc
-- Install oh-my-bash
-    `agnoster` theme
-    `alias cat="bat"`
-    `alias ls="exa"`
-    `alias vim="nvim"`
-    `export EDITOR="vim"`
-- Install neovim 
-    Clone [kickstart.nvim](https://github.com/Parz1val02/kickstart.nvim) into ~/.config/nvim
-- Install oh-my-tmux
-- Install alacritty
-- Install neofetch, cmatrix, cava
-- Catpuccin modded theme for user theme and legacy applications (configure in tweaks)
-    This themes allows to have the transparent topbar 
-    Copy to ~/.themes 
-- Install a nerd font from aur (ComicShannsMono Nerd Font)
-- Install icons (papirus)
-    `wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh`
-    Copy to ~/.icons
-### Gnome extensions
-- Aylur's Widgets
-- Blur my Shell
-- Logo menu
-- Top bar organizer
-- User Themes
-- Vitals
-- Space bar
-- App hider
-- Forge for tiling (not necessary for now)
-### General recommendations
-- Install yay
-    `git clone https://aur.archlinux.org/yay.git`
-    `makepkg -si`
-- Refresh pacman mirrorlist
-    `sudo pacman -S reflector`
-    `sudo systemctl enable reflector.timer`
-- Automatic cleaning the package cache
-    `sudo pacman -S pacman-contrib`
-    `sudo systemctl enable paccache.timer`
-- Enable NTP (Network time protocol)
-    Configure /etc/systemd/timesyncd.conf
-    Start and enable systemd-timesyncd
-- Enable periodic trim for the ssd
-    Check TRIM support
-	`lsblk --discard`
-    Start and enable fstrim.timer
-- Instal ufw
-    Default settings are fine (deny incoming, allow outgoing connections)
+### Arch rice in Gnome<br/>
+- Configure pacman<br/>
+    sudo vim /etc/pacman.conf<br/>
+    Add `Color` and `ILoveCandy`<br/>
+- Install bat, exa<br/>
+    Use alias and source .bashrc<br/>
+- Install oh-my-bash<br/>
+    `agnoster` theme<br/>
+    `alias cat="bat"`<br/>
+    `alias ls="exa"`<br/>
+    `alias vim="nvim"`<br/>
+    `export EDITOR="vim"`<br/>
+- Install neovim <br/>
+    Clone [kickstart.nvim](https://github.com/Parz1val02/kickstart.nvim) into ~/.config/nvim<br/>
+- Install oh-my-tmux<br/>
+- Install alacritty<br/>
+- Install neofetch, cmatrix, cava<br/>
+- Catpuccin modded theme for user theme and legacy applications (configure in tweaks)<br/>
+    This themes allows to have the transparent topbar <br/>
+    Copy to ~/.themes <br/>
+- Install a nerd font from aur (ComicShannsMono Nerd Font)<br/>
+- Install icons (papirus)<br/>
+    `wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh`<br/>
+    Copy to ~/.icons<br/>
 
-I need swap file
-I need to start making backups
-I need to start making shell scripts
+### Gnome extensions<br/>
+- Aylur's Widgets<br/>
+- Blur my Shell<br/>
+- Logo menu<br/>
+- Top bar organizer<br/>
+- User Themes<br/>
+- Vitals<br/>
+- Space bar<br/>
+- App hider<br/>
+- Forge for tiling (not necessary for now)<br/>
+
+### General recommendations<br/>
+- Install yay<br/>
+    `git clone https://aur.archlinux.org/yay.git`<br/>
+    `makepkg -si`<br/>
+- Refresh pacman mirrorlist<br/>
+    `sudo pacman -S reflector`<br/>
+    `sudo systemctl enable reflector.timer`<br/>
+- Automatic cleaning the package cache<br/>
+    `sudo pacman -S pacman-contrib`<br/>
+    `sudo systemctl enable paccache.timer`<br/>
+- Enable NTP (Network time protocol)<br/>
+    Configure /etc/systemd/timesyncd.conf<br/>
+    Start and enable systemd-timesyncd<br/>
+- Enable periodic trim for the ssd<br/>
+    Check TRIM support<br/>
+	`lsblk --discard`<br/>
+    Start and enable fstrim.timer<br/>
+- Instal ufw<br/>
+    Default settings are fine (deny incoming, allow outgoing connections)<br/>
+
+### Todo<br/>
+I need swap file<br/>
+I need to start making backups<br/>
+I need to start making shell scripts<br/>
