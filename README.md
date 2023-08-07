@@ -1,4 +1,4 @@
-### Arch rice in Gnome<br/>
+# Arch rice in Gnome<br/>
 - Configure pacman<br/>
     - sudo vim /etc/pacman.conf<br/>
     - Add `Color` and `ILoveCandy`<br/>
@@ -22,8 +22,9 @@
 - Install icons (papirus)<br/>
     - `wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh`<br/>
     - Copy to ~/.icons<br/>
+- Wallpaper: [Neon Streets](https://i.redd.it/p7k9fw9d1fka1.png)<br/>
 
-### Gnome extensions<br/>
+## Gnome extensions<br/>
 - Aylur's widgets<br/>
 - Blur my shell<br/>
 - Logo menu<br/>
@@ -54,7 +55,7 @@
 - Instal ufw<br/>
     - Default settings are fine (deny incoming, allow outgoing connections)<br/>
 
-### Todo<br/>
+#### Todo<br/>
 >I need swap file<br/>
 >I need to start making backups<br/>
 >I need to start making shell scripts<br/>
