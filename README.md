@@ -24,15 +24,15 @@
     - Copy to ~/.icons<br/>
 
 ### Gnome extensions<br/>
-- Aylur's Widgets<br/>
-- Blur my Shell<br/>
+- Aylur's widgets<br/>
+- Blur my shell<br/>
 - Logo menu<br/>
 - Top bar organizer<br/>
-- User Themes<br/>
+- User themes<br/>
 - Vitals<br/>
 - Space bar<br/>
 - App hider<br/>
-- Forge for tiling (not necessary for now)<br/>
+- Dash to dock <br/>
 
 ### General recommendations<br/>
 - Install yay<br/>
