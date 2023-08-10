@@ -54,6 +54,7 @@
     - Start and enable fstrim.timer<br/>
 - Instal ufw<br/>
     - Default settings are fine (deny incoming, allow outgoing connections)<br/>
+- Install windows fonts xd<br/>
 
 #### Todo<br/>
 >I need swap file<br/>
