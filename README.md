@@ -56,13 +56,13 @@
     - Default settings are fine (deny incoming, allow outgoing connections)<br/>
 - Install windows fonts xd<br/>
 
-## Firefox CSS
-- In about:config
-    - Change `toolkit.legacyUserProfileCustomizations.stylesheets` to **true**
-- In about:profiles
-    - Navigate to the default profile's root directory and copy the chrome directory
-- userContent.css to change the home page.
-- Wallpaper: [Shooting Star](https://imgur.com/a/8RKmstf)
+## Firefox CSS<br/>
+- In about:config<br/>
+    - Change `toolkit.legacyUserProfileCustomizations.stylesheets` to **true**<br/>
+- In about:profiles<br/>
+    - Navigate to the default profile's root directory and copy the chrome directory<br/>
+- userContent.css to change the home page.<br/>
+- Wallpaper: [Shooting Star](https://imgur.com/a/8RKmstf)<br/>
 
 #### Todo<br/>
 >I need swap file<br/>
