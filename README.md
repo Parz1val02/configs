@@ -35,7 +35,7 @@
 - App hider<br/>
 - Dash to dock <br/>
 
-### General recommendations<br/>
+## General recommendations<br/>
 - Install yay<br/>
     - `git clone https://aur.archlinux.org/yay.git`<br/>
     - `makepkg -si`<br/>
@@ -55,6 +55,14 @@
 - Instal ufw<br/>
     - Default settings are fine (deny incoming, allow outgoing connections)<br/>
 - Install windows fonts xd<br/>
+
+## Firefox CSS
+- In about:config
+    - Change `toolkit.legacyUserProfileCustomizations.stylesheets` to **true**
+- In about:profiles
+    - Navigate to the default profile's root directory and copy the chrome directory
+- userContent.css to change the home page.
+- Wallpaper: [Shooting Star](https://imgur.com/a/8RKmstf)
 
 #### Todo<br/>
 >I need swap file<br/>
