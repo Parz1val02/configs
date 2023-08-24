@@ -1,0 +1,29 @@
+@-moz-document url("about:home"), url("about:newtab") {
+  body {
+    background-image: url("shootingstar.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+  }
+
+  /*Remove search bar*/
+  .search-wrapper .search-inner-wrapper {
+    display: none!important;
+  }
+  .search-wrapper .logo-and-wordmark {
+    margin-bottom: 40px!important;
+    padding-top: 40px!important;
+    opacity:0.75!important;
+  }
+
+  .top-site-outer .tile {
+    background: none !important;
+    box-shadow: none !important;
+  }
+  .top-site-outer:is(.active, :focus, :hover) { 
+  /*Remove dark-gray mouse hover box*/
+    box-shadow: none !important;     
+    background: transparent !important; 
+  } 
+}
