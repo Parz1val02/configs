@@ -1,4 +1,4 @@
-# Arch rice in Gnome<br/>
+# Arch install with gnome<br/>
 - Configure pacman<br/>
     - sudo vim /etc/pacman.conf<br/>
     - Add `Color` and `ILoveCandy`<br/>
@@ -42,9 +42,11 @@
 - Refresh pacman mirrorlist<br/>
     - `sudo pacman -S reflector`<br/>
     - `sudo systemctl enable reflector.timer`<br/>
+    - `sudo systemctl start reflector.timer`<br/>
 - Automatic cleaning the package cache<br/>
     - `sudo pacman -S pacman-contrib`<br/>
     - `sudo systemctl enable paccache.timer`<br/>
+    - `sudo systemctl start paccache.timer`<br/>
 - Enable NTP (Network time protocol)<br/>
     - Configure /etc/systemd/timesyncd.conf<br/>
     - Start and enable systemd-timesyncd<br/>
