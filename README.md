@@ -1,30 +1,33 @@
-# Arch install with gnome<br/>
+# Arch install with gnome
 - Configure pacman<br/>
-    - sudo vim /etc/pacman.conf<br/>
-    - Add `Color` and `ILoveCandy`<br/>
+    - In /etc/pacman.conf:<br/>
+	- `Color`<br/>
+	- `ILoveCandy`<br/>
 - Install bat, exa<br/>
     - Use alias and source .bashrc<br/>
 - Install oh-my-bash<br/>
-    - `agnoster` theme<br/>
-    - `alias cat="bat"`<br/>
-    - `alias ls="exa"`<br/>
-    - `alias vim="nvim"`<br/>
-    - `export EDITOR="vim"`<br/>
+    - In ~/.bashrc:<br/>
+	- `OSH_THEME="agnoster"`<br/>
+    	- `alias cat="bat"`<br/>
+    	- `alias ls="exa"`<br/>
+    	- `alias vim="nvim"`<br/>
+    	- `export EDITOR="vim"`<br/>
+    	- `neofetch`<br/>
 - Install neovim <br/>
     - Clone [kickstart.nvim](https://github.com/Parz1val02/kickstart.nvim) into ~/.config/nvim<br/>
-- Install oh-my-tmux<br/>
-- Install alacritty<br/>
-- Install neofetch, cmatrix, cava<br/>
+- Install oh-my-tmux, alacritty, neofetch, cmatrix, cava<br/>
+    - Copy /alacritty/alacritty.yaml to ~/.config/alacritty/
+    - Copy /neofetch/config.conf to ~/.config/neofetch/
 - Catpuccin modded theme for user theme and legacy applications (configure in tweaks)<br/>
     - This themes allows to have the transparent topbar <br/>
-    - Copy to ~/.themes <br/>
+    - Copy to /Catpuccin/ ~/.themes <br/>
 - Install a nerd font from aur (ComicShannsMono Nerd Font)<br/>
 - Install icons (papirus)<br/>
     - `wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh`<br/>
     - Copy to ~/.icons<br/>
 - Wallpaper: Use variety to dynamically change wallpapers<br/>
 
-## Gnome extensions<br/>
+## Gnome extensions
 - Aylur's widgets<br/>
 - Blur my shell<br/>
 - Logo menu<br/>
@@ -35,7 +38,7 @@
 - App hider<br/>
 - Dash to dock <br/>
 
-## General recommendations<br/>
+## General recommendations
 - Install yay<br/>
     - `git clone https://aur.archlinux.org/yay.git`<br/>
     - `makepkg -si`<br/>
@@ -54,11 +57,11 @@
     - Check TRIM support<br/>
 	- `lsblk --discard`<br/>
     - Start and enable fstrim.timer<br/>
-- Instal ufw<br/>
+- Install ufw<br/>
     - Default settings are fine (deny incoming, allow outgoing connections)<br/>
 - Install windows fonts xd<br/>
 
-## Firefox CSS<br/>
+## Firefox CSS
 - In about:config<br/>
     - Change `toolkit.legacyUserProfileCustomizations.stylesheets` to **true**<br/>
 - In about:profiles<br/>
@@ -66,7 +69,7 @@
 - userContent.css to change the home page.<br/>
 - Wallpaper: [Shooting Star](https://imgur.com/a/8RKmstf)<br/>
 
-#### Todo<br/>
+#### Todo
 >I need swap file<br/>
 >I need to start making backups<br/>
 >I need to start making shell scripts<br/>
