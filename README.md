@@ -37,6 +37,7 @@
 - Space bar<br/>
 - App hider<br/>
 - Dash to dock <br/>
+- Rounded window corners <br/>
 
 ## General recommendations
 - Install yay<br/>
